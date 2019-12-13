@@ -7,4 +7,12 @@ def count_th(word):
     
     # TBC
     
-    pass
+   #Need to figure out how to remove only the first occurence of th for the recuresive call
+    count = 0
+    if "th" in word:
+        # print("yes", count)
+        return 1 + count_th(word.replace("th", " ", 1))
+    else:
+        # print("no")
+        return count
+    # return count 
